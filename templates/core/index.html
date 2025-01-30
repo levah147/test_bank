@@ -19,7 +19,7 @@
 		<!-- ==============================================
 		FAVICON
 		=============================================== -->  
-        <link rel="shortcut icon" href="img/master/favicon.html">
+        <link rel="shortcut icon" href="{% static 'img/master/favicon.html' %}">
              
 		<!-- ==============================================
 		CSS
@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
         <link rel="stylesheet" href="{% static 'fonts/font-awesome/css/font-awesome.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
-        <script src="{% static 'js/modernizr-custom.js' %}"></script>
+        <script src="{% static '.js/modernizr-custom.js' %}"></script>
         
 	</head>
     
@@ -173,7 +173,7 @@
                  <h1 class="animated fadeInLeft">Be Life Confident</h1>
                  <h5 class="animated fadeInUp">Growing Your Dreams.</h5>
                  <div class="slider-btn">
-                     <div class="animated inner-btn fadeInUp"><a href="#" class="btn btn-slider">Get Started</a></div>
+                     <div class="animated inner-btn fadeInUp"><a href="{% url 'login' %}" class="btn btn-slider">Get Started</a></div>
                  </div>
               </div>
             </div>
@@ -183,7 +183,7 @@
                  <h1 class="animated fadeInLeft">Planning For The Future.</h1>
                  <h5 class="animated fadeInUp">Strategies To Grow and Protect.</h5>
                  <div class="slider-btn">
-                     <div class="animated inner-btn fadeInUp"><a href="#" class="btn btn-slider">LEARN MORE</a></div>
+                     <div class="animated inner-btn fadeInUp"><a href="{% url 'dashboard' %}" class="btn btn-slider">Get Started</a></div>
                  </div>
               </div>
             </div>
@@ -193,7 +193,7 @@
                  <h1 class="animated fadeInLeft">Get Your Start Here</h1>
                  <h5 class="animated fadeInUp">Making Your Future Our Business.</h5>
                  <div class="slider-btn">
-                     <div class="animated inner-btn fadeInUp"><a href="#" class="btn btn-slider">LEARN MORE</a></div>
+                     <div class="animated inner-btn fadeInUp"><a href="{% url 'dashboard' %}" class="btn btn-slider">Get Started</a></div>
                  </div>
               </div>
             </div>
