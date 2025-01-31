@@ -1,0 +1,211 @@
+{% extends "core/base.html" %}
+
+ {% load static %}
+
+ {% block title %}
+
+business
+ {% endblock title %}
+
+{% block content %}
+
+
+
+
+    
+    
+    <div class="sections">
+        <div class="container">
+            <div class="pages-title">
+                <h1>Business  Services</h1>
+                <p>Home &nbsp; > &nbsp; Business Banking</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <aside class="services">
+                <div class="inner-service-block">
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#">Business Banking</a> 
+                        <span class="badge"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="investment-advisor.html">Investment Advisor</a> 
+                        <span class="badge"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="tax-consulting.html">Tax Consultant</a> 
+                        <span class="badge"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="finance-consulting.html">Finance Consultant</a> 
+                        <span class="badge"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="insurence-ajuster.html">Insurence Ajuster</a> 
+                        <span class="badge"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="retirement-advisor.html">Retiretment Advisor</a> 
+                        <span class="badge"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                      </li>
+                    </ul>
+                </div>
+                <div class="inner-sidebar">
+                  <h5>Recent News</h5>
+                  <hr class="left">
+                  <div class="media-list">
+                    <div class="media-post">
+                        <figure class="media-thumb"><a href="#"><img src="{% static 'img/images/thumb1.jpg' %}" alt=""></a></figure>
+                      <div class="media-caption">
+                        <h5><a href="#">Best Finance Advise</a></h5> 
+                        <p>6 Nov 2018</p>
+                      </div>
+                    </div>
+                    <div class="media-post">
+                      <figure class="media-thumb"><a href="#"><img src="{% static 'img/images/thumb2.jpg' %}" alt=""></a></figure>
+                      <div class="media-caption">
+                        <h5><a href="#">Best finance films.</a></h5> 
+                        <p>18 Oct 2018</p>
+                      </div>
+                    </div>
+                    <div class="media-post">
+                      <figure class="media-thumb"><a href="#"><img src="{% static 'img/images/thumb3.jpg' %}" alt=""></a></figure>
+                      <div class="media-caption">
+                        <h5><a href="#">Bitcoin tumbles again.</a></h5> 
+                        <p>18 Sep 2018</p>
+                      </div>
+                    </div>
+                    <div class="media-post">
+                      <figure class="media-thumb"><a href="#"><img src="{% static 'img/images/thumb1.jpg' %}" alt=""></a></figure>
+                      <div class="media-caption">
+                        <h5><a href="#">The Roth strategy.</a></h5> 
+                        <p>12 Sep 2018</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-service-block">
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> &nbsp; Download PDF</a> 
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="#"><i class="fa fa-file-o" aria-hidden="true"></i> &nbsp; Download Doc</a> 
+                      </li>
+                    </ul>
+                </div>
+            </aside> 
+          </div>
+          <div class="col-lg-9">
+             <div class="service-description">
+                <h2>Business Banking</h2>
+                 <hr class="left">
+                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, making this the first true generator on the Internet. It uses a dictionary. Generators on the Internet tend to repeat predefined chunks as necessary</p>
+
+                 <p>Their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. But the majority have suffered alteration in some form, by injected humour </p>
+
+                 <figure class="service-pic"><img src="{% static 'img/images/img10.jpg' %}" alt=""></figure>
+                 <div class="tabs">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Audit</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Strategy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Sustainability</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                          <figure class="thumbnail-tab"><img src="{% static 'img/images/service-1.jpg' %}" alt=""></figure>
+                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p> 
+                          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                      </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <figure class="thumbnail-tab"><img src="{% static 'img/images/service-2.jpg' %}" alt=""></figure>
+                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p> 
+                          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>  
+                      </div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <figure class="thumbnail-tab"><img src="{% static 'img/images/service-3.jpg' %}" alt=""></figure>
+                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p> 
+                          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>  
+                      </div>
+                    </div>
+                 </div>
+             </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid inner-color">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Trusting Us</h2>
+                <hr class="center">
+                <p>leap into electronic typesetting, remaining essentially unchanged</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="front-thumbnail">
+                    <figure class="box-pic"><a href="#"><img src="{% static 'img/images/img1.jpg' %}" alt=""></a></figure> 
+                    <div class="rounded-circle"><figure class="center-circle-icon"><img src="{% static 'img/master/cost.png' %}" alt=""></figure> </div>
+                    <div class="figure-caption">
+                        <h4>Financial Strategy</h4>
+                        <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 center-div">
+                <div class="front-thumbnail">
+                    <figure class="box-pic"><a href="#"><img src="{% static 'img/images/img3.jpg' %}" alt=""></a></figure> 
+                    <div class="rounded-circle"><figure class="center-circle-icon"><img src="{% static 'img/master/deal.png' %}" alt=""></figure> </div>
+                    <div class="figure-caption">
+                        <h4>Tax Consultant</h4>
+                        <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="front-thumbnail">
+                    <figure class="box-pic"><a href="#"><img src="{% static 'img/images/img2.jpg' %}" alt=""></a></figure> 
+                    <div class="rounded-circle"><figure class="center-circle-icon"><img src="{% static 'img/master/document.png' %}" alt=""></figure> </div>
+                    <div class="figure-caption">
+                        <h4>Retirement</h4>
+                        <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    
+   
+    <a href="#0" class="cd-top">Top</a>
+	<!-- ==============================================
+	JAVASCRIPTS
+	=============================================== -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/loader.js' %}"></script>
+    <script src="{% static 'js/top.js' %}"></script>  
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','js/analytics.js','ga');
+      ga('create', 'UA-101241150-1', 'auto');
+      ga('send', 'pageview');
+    </script> 
+ 
+
+{% endblock content %}
