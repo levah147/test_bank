@@ -27,9 +27,9 @@
 </head>
 <body class="layout-4">
 <!-- Page Loader -->
-<div class="page-loader-wrapper">
+<!-- <div class="page-loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
-</div>
+</div> -->
 
 <div id="app">
     <div class="main-wrapper main-wrapper-1">
@@ -39,8 +39,15 @@
         <nav class="navbar navbar-expand-lg main-navbar">
             <form class="form-inline mr-auto">
                 <ul class="navbar-nav mr-3">
-                    <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
-                    <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+                            <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+                          </svg>
+                    
+                    </a></li>
+                    <!-- <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li> -->
                 </ul>
                
 
@@ -51,7 +58,13 @@
 
             
             <ul class="navbar-nav navbar-right">
-                <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
+                <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                      </svg>
+                
+                </a>
                     <div class="dropdown-menu dropdown-list dropdown-menu-right">
                     <div class="dropdown-header">Messages
                         <div class="float-right">
@@ -117,7 +130,13 @@
                     </div>
                     </div>
                 </li>
-                <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+                <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                  </svg>
+                
+                </a>
                     <div class="dropdown-menu dropdown-list dropdown-menu-right">
                     <div class="dropdown-header">Notifications
                         <div class="float-right">
@@ -133,24 +152,7 @@
                                 <div class="time text-primary">2 Min Ago</div>
                             </div>
                         </a>
-                        <a href="#" class="dropdown-item">
-                            <div class="dropdown-item-icon bg-info text-white">
-                                <i class="far fa-user"></i>
-                            </div>
-                            <div class="dropdown-item-desc">
-                                <b>You</b> and <b>Dedik Sugiharto</b> are now friends
-                                <div class="time">10 Hours Ago</div>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-item">
-                            <div class="dropdown-item-icon bg-success text-white">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="dropdown-item-desc">
-                                <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to <b>Done</b>
-                                <div class="time">12 Hours Ago</div>
-                            </div>
-                        </a>
+                       
                         <a href="#" class="dropdown-item">
                             <div class="dropdown-item-icon bg-danger text-white">
                                 <i class="fas fa-exclamation-triangle"></i>
@@ -178,14 +180,31 @@
                 <li class="dropdown">
                     <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                     <img alt="image" src="{% static 'assets/img/avatar/avatar-1.png' %}" class="rounded-circle mr-1">
-                    <div class="d-sm-none d-lg-inline-block">Hi, Michelle Green</div></a>
+                    <div class="d-sm-none d-lg-inline-block">Hi, Emmanuel Levah</div></a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <div class="dropdown-title">Logged in 5 min ago</div>
-                        <a href="features-profile.html" class="dropdown-item has-icon"><i class="far fa-user"></i> Profile</a>
-                        <a href="features-activities.html" class="dropdown-item has-icon"><i class="fas fa-bolt"></i> Activities</a>
-                        <a href="features-settings.html" class="dropdown-item has-icon"><i class="fas fa-cog"></i> Settings</a>
+                        <div class="dropdown-title">Logged in </div>
+                        <a href="features-profile.html" class="dropdown-item has-icon">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                              </svg>
+
+                        Profile</a>
+                        <a href="features-settings.html" class="dropdown-item has-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                              </svg>
+                            
+                            Settings</a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item has-icon text-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        <a href="#" class="dropdown-item has-icon text-danger">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+                                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+                              </svg>
+                            
+                            Logout</a>
                     </div>
                 </li>
             </ul>
@@ -198,99 +217,69 @@
                     <a href="index-2.html">Unity Bank</a>
                 </div>
                 <div class="sidebar-brand sidebar-brand-sm">
-                    <a href="index-2.html">CP</a>
+                    <a href="index-2.html">UB</a>
                 </div>
                 <ul class="sidebar-menu">
                     <li class="menu-header">Dashboard</li>
                     <li class="dropdown ">
-                        <a href="#" class="btn btn-primary btn-lg btn-block btn-icon-split"><i class="fas                         fa-rocket
-"></i><span>Dashboard</span></a>
+                        <a href="#" class="btn btn-primary btn-lg btn-block btn-icon-split">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+                              </svg>
+<span>Dashboard</span></a>
                      
                         
                     </li>
                     <li class="menu-header">Starter</li>
                     <li class="dropdown">
-                        <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="nav-link" href="layout-default.html">Default Layout</a></li>
+                       
                             
-                            <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>
-                    <li class="dropdown">
-                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Bootstrap</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="nav-link" href="bootstrap-alert.html">Alert</a></li>
-                            <li><a class="nav-link" href="bootstrap-badge.html">Badge</a></li>
-                            <li><a class="nav-link" href="bootstrap-breadcrumb.html">Breadcrumb</a></li>
-                            <li><a class="nav-link" href="bootstrap-buttons.html">Buttons</a></li>
-                            <li><a class="nav-link" href="bootstrap-card.html">Card</a></li>
-                            <li><a class="nav-link" href="bootstrap-carousel.html">Carousel</a></li>
-                            <li><a class="nav-link" href="bootstrap-collapse.html">Collapse</a></li>
-                            <li><a class="nav-link" href="bootstrap-dropdown.html">Dropdown</a></li>
-                            <li><a class="nav-link" href="bootstrap-form.html">Form</a></li>
-                            <li><a class="nav-link" href="bootstrap-list-group.html">List Group</a></li>
-                            <li><a class="nav-link" href="bootstrap-media-object.html">Media Object</a></li>
-                            <li><a class="nav-link" href="bootstrap-modal.html">Modal</a></li>
-                            <li><a class="nav-link" href="bootstrap-nav.html">Nav</a></li>
-                            <li><a class="nav-link" href="bootstrap-navbar.html">Navbar</a></li>
-                            <li><a class="nav-link" href="bootstrap-pagination.html">Pagination</a></li>
-                            <li><a class="nav-link" href="bootstrap-popover.html">Popover</a></li>
-                            <li><a class="nav-link" href="bootstrap-progress.html">Progress</a></li>
-                            <li><a class="nav-link" href="bootstrap-table.html">Table</a></li>
-                            <li><a class="nav-link" href="bootstrap-tooltip.html">Tooltip</a></li>
-                            <li><a class="nav-link" href="bootstrap-typography.html">Typography</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-header">CodiePie</li>
-                    <li class="dropdown">
-                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i> <span>Components</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="nav-link" href="components-article.html">Article</a></li>
-                            <li><a class="nav-link beep beep-sidebar" href="components-avatar.html">Avatar</a></li>
-                            <li><a class="nav-link" href="components-chat-box.html">Chat Box</a></li>
-                            <li><a class="nav-link beep beep-sidebar" href="components-empty-state.html">Empty State</a></li>
-                            <li><a class="nav-link" href="components-gallery.html">Gallery</a></li>
-                            <li><a class="nav-link beep beep-sidebar" href="components-hero.html">Hero</a></li>
-                            <li><a class="nav-link" href="components-multiple-upload.html">Multiple Upload</a></li>
-                            <li><a class="nav-link beep beep-sidebar" href="components-pricing.html">Pricing</a></li>
-                            <li><a class="nav-link" href="components-statistic.html">Statistic</a></li>
-                            <li><a class="nav-link" href="components-tab.html">Tab</a></li>
-                            <li><a class="nav-link" href="components-table.html">Table</a></li>
-                            <li><a class="nav-link" href="components-user.html">User</a></li>
-                            <li><a class="nav-link beep beep-sidebar" href="components-wizard.html">Wizard</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>Forms</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="nav-link" href="forms-advanced-form.html">Advanced Form</a></li>
-                            <li><a class="nav-link" href="forms-editor.html">Editor</a></li>
-                            <li><a class="nav-link" href="forms-validation.html">Validation</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="nav-link has-dropdown"><i class="fas fa-map-marker-alt"></i> <span>Google Maps</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="gmaps-advanced-route.html">Advanced Route</a></li>
-                            <li><a href="gmaps-draggable-marker.html">Draggable Marker</a></li>
-                            <li><a href="gmaps-geocoding.html">Geocoding</a></li>
-                            <li><a href="gmaps-geolocation.html">Geolocation</a></li>
-                            <li><a href="gmaps-marker.html">Marker</a></li>
-                            <li><a href="gmaps-multiple-marker.html">Multiple Marker</a></li>
-                            <li><a href="gmaps-route.html">Route</a></li>
-                            <li><a href="gmaps-simple.html">Simple</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="/" class="nav-link "> <span>Home</span></a>
-                      
-                    </li>
-                    
-                          </ul>
+                            
+                          
+                    <li><a class="nav-link" href="blank.html">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                            <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
+                          </svg>
+                        
+                        <span> &nbsp;&nbsp;&nbsp;&nbsp;Balance</span></a></li>
+
+
+
+                        <li><a class="nav-link" href="blank.html">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                                <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+                                <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+                                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+                              </svg>
+                            
+                            <span> &nbsp;&nbsp;&nbsp;&nbsp;Transactions</span></a></li>
+    
+
+                        <li><a class="nav-link" href="blank.html">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-window-desktop" viewBox="0 0 16 16">
+                                <path d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                                <path d="M2.375 1A2.366 2.366 0 0 0 0 3.357v9.286A2.366 2.366 0 0 0 2.375 15h11.25A2.366 2.366 0 0 0 16 12.643V3.357A2.366 2.366 0 0 0 13.625 1zM1 3.357C1 2.612 1.611 2 2.375 2h11.25C14.389 2 15 2.612 15 3.357V4H1zM1 5h14v7.643c0 .745-.611 1.357-1.375 1.357H2.375A1.366 1.366 0 0 1 1 12.643z"/>
+                              </svg>
+                            
+                            <span> &nbsp;&nbsp; Top Countries</span></a></li>
+
+
+                  
+              <br><br><br>
+
                 <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
-                    <a href="*" class="btn btn-primary btn-lg btn-block btn-icon-split"><i class="fas fa-rocket"></i> Documentation</a>
+                    <a href="*" class="btn btn-primary btn-lg btn-block btn-icon-split">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+                            <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+                          </svg>
+                        
+                          &nbsp;&nbsp; &nbsp;&nbsp; Logout </a>
                 </div>
             </aside>
         </div>
@@ -305,36 +294,22 @@
                             <canvas id="sales-chart" height="80"></canvas>
                             </div>
                             <div class="card-icon shadow-primary bg-primary">
-                            <i class="fas fa-shopping-bag"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                                    <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
+                                  </svg>
+                                
                             </div>
                             <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Transactions</h4>
+                                <h4>Balance</h4>
                             </div>
                             <div class="card-body">
-                                4
+                                $187,13
                             </div>
                             </div>
                         </div>
                         </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card card-statistic-2">
-                        <div class="card-chart">
-                        <canvas id="balance-chart" height="80"></canvas>
-                        </div>
-                        <div class="card-icon shadow-primary bg-primary">
-                        <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <div class="card-wrap">
-                        <div class="card-header">
-                            <h4>Balance</h4>
-                        </div>
-                        <div class="card-body">
-                            $187,13
-                        </div>
-                        </div>
-                    </div>
-                    </div>
+                   
                   
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="card card-statistic-2">
@@ -342,7 +317,12 @@
                             <canvas id="sales-chart" height="80"></canvas>
                             </div>
                             <div class="card-icon shadow-primary bg-primary">
-                            <i class="fas fa-shopping-bag"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                                    <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+                                    <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+                                    <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+                                  </svg>
                             </div>
                             <div class="card-wrap">
                             <div class="card-header">
@@ -368,7 +348,11 @@
                             <div class="card-header">
                                 <h4>Invoices</h4>
                                 <div class="card-header-action">
-                                    <a href="#" class="btn btn-danger">View More <i class="fas fa-chevron-right"></i></a>
+                                    <a href="#" class="btn btn-danger">View More 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                          </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-body p-0">
@@ -385,7 +369,7 @@
                                         <td><a href="#">INV-87239</a></td>
                                        
                                         <td><div class="badge badge-warning">Unpaid</div></td>
-                                        <td>July 19, 2018</td>
+                                        <td>July 19, 2025</td>
                                         <td>
                                         <a href="#" class="btn btn-primary">Detail</a>
                                         </td>
@@ -394,7 +378,7 @@
                                         <td><a href="#">INV-48574</a></td>
                                        
                                         <td><div class="badge badge-success">Paid</div></td>
-                                        <td>July 21, 2018</td>
+                                        <td>July 21, 2025</td>
                                         <td>
                                         <a href="#" class="btn btn-primary">Detail</a>
                                         </td>
@@ -403,7 +387,7 @@
                                         <td><a href="#">INV-76824</a></td>
                                       
                                         <td><div class="badge badge-warning">Unpaid</div></td>
-                                        <td>July 22, 2018</td>
+                                        <td>July 22, 2025</td>
                                         <td>
                                         <a href="#" class="btn btn-primary">Detail</a>
                                         </td>
@@ -431,23 +415,23 @@
                                         <div class="text-title mb-2">July</div>
                                         <ul class="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
                                             <li class="media">
-                                            <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/id.svg" alt="image" width="40">
+                                            <img class="img-fluid mt-1 img-shadow" src="{% static 'img1/usa.webp' %}" alt="image" width="40">
                                             <div class="media-body ml-3">
                                                 <div class="media-title">USA</div>
                                                 <div class="text-small text-muted">3,282 <i class="fas fa-caret-down text-danger"></i></div>
                                             </div>
                                             </li>
                                             <li class="media">
-                                            <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/my.svg" alt="image" width="40">
+                                            <img class="img-fluid mt-1 img-shadow" src="{% static 'img1/Malaysia.svg' %}" alt="image" width="40">
                                             <div class="media-body ml-3">
                                                 <div class="media-title">Malaysia</div>
                                                 <div class="text-small text-muted">2,976 <i class="fas fa-caret-down text-danger"></i></div>
                                             </div>
                                             </li>
                                             <li class="media">
-                                            <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/us.svg" alt="image" width="40">
+                                            <img class="img-fluid mt-1 img-shadow" src="{% static 'img1/uk.webp' %}" alt="image" width="40">
                                             <div class="media-body ml-3">
-                                                <div class="media-title">United States</div>
+                                                <div class="media-title">United Kingdom </div>
                                                 <div class="text-small text-muted">1,576 <i class="fas fa-caret-up text-success"></i></div>
                                             </div>
                                             </li>
@@ -457,21 +441,21 @@
                                         <div class="text-title mb-2">August</div>
                                         <ul class="list-unstyled list-unstyled-border list-unstyled-noborder mb-0">
                                             <li class="media">
-                                            <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/id.svg" alt="image" width="40">
+                                            <img class="img-fluid mt-1 img-shadow" src="{% static 'img1/usa.webp' %}" alt="image" width="40">
                                             <div class="media-body ml-3">
                                                 <div class="media-title">USA</div>
                                                 <div class="text-small text-muted">3,486 <i class="fas fa-caret-up text-success"></i></div>
                                             </div>
                                             </li>
                                             <li class="media">
-                                            <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/ps.svg" alt="image" width="40">
+                                            <img class="img-fluid mt-1 img-shadow" src="{% static 'img1/Palestine.webp' %}" alt="image" width="40">
                                             <div class="media-body ml-3">
                                                 <div class="media-title">Palestine</div>
                                                 <div class="text-small text-muted">3,182 <i class="fas fa-caret-up text-success"></i></div>
                                             </div>
                                             </li>
                                             <li class="media">
-                                            <img class="img-fluid mt-1 img-shadow" src="http://puffintheme.com/craft/codiepie/dist/assets/modules/flag-icon-css/flags/4x3/de.svg" alt="image" width="40">
+                                            <img class="img-fluid mt-1 img-shadow" src="{% static 'img1/Germany.png' %}" alt="image" width="40">
                                             <div class="media-body ml-3">
                                                 <div class="media-title">Germany</div>
                                                 <div class="text-small text-muted">2,317 <i class="fas fa-caret-down text-danger"></i></div>
