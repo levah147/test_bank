@@ -31,7 +31,10 @@
             <div class="row">
                 <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
                     <div class="login-brand">
-                        <img src="http://puffintheme.com/craft/codiepie/dist/assets/img/CodiePie-fill.svg" alt="logo" width="100" class="shadow-light rounded-circle">
+                        <a href="/">
+                        <img src="{% static 'img/master/logo.png' %}" alt="logo" width="130" class="shadow-light rounded-circle">
+
+                        </a>
                     </div>
                     <div class="card card-primary">
                         <div class="card-header">
@@ -48,6 +51,19 @@
                                         <label for="last_name">Last Name</label>
                                         <input id="last_name" type="text" class="form-control" name="last_name">
                                     </div>
+
+{% comment %} //////////////////////////////////////////////////////// {% endcomment %}
+                                    <div class="form-group col-6">
+                                        <label for="frist_name">Date of Birth </label>
+                                        <input id="frist_name" type="date" class="form-control" name="date" autofocus>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="number">Phone </label>
+                                        <input id="last_name" type="number" class="form-control" name="number">
+                                    </div>
+
+{% comment %} ending here  {% endcomment %}
+
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
@@ -55,7 +71,91 @@
                                     <div class="invalid-feedback">
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label for="address">Home Address</label>
+                                    <input id="address" type="address" class="form-control" name="address">
+                                    <div class="invalid-feedback">
+                                    </div>
+                                </div>
+
+                        
+
                                 <div class="row">
+
+                                    <div class="form-group col-6">
+                                        <label for="city">City </label>
+                                        <input id="city" type="text" class="form-control" name="City" placeholder='City' autofocus>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="state">State/ Province </label>
+                                        <input id="state" type="text" class="form-control" placeholder='Enter state/ province' name="state">
+                                    </div>
+
+                                    
+                                        <div class="form-group col-6">
+                                            <label>Country</label>
+                                            <select class="form-control selectric">
+                                                <option>USA</option>
+                                                <option>Palestine</option>
+                                                <option>Syria</option>
+                                                <option>Malaysia</option>
+                                                <option>Thailand</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <label>Occupation</label>
+                                            <select class="form-control selectric">
+                                                <option>select type of Employment</option>
+                                                <option>Self Employed</option>
+                                                <option>Public/Government Office</option>
+                                                <option>Private/Partnership Office</option>
+                                                <option>Business/Sales </option>
+                                                <option>Trading/Market</option>
+                                                <option>Politician/Celebrity</option>
+                                            </select>
+                                        </div>
+                                    
+
+                                    
+                                </div>
+                                <div class="form-divider">Personal Details</div>
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <label>Account Type</label>
+                                        <select class="form-control selectric">
+                                            <option>please select Account Type</option>
+                                            <option>Saving Account</option>
+                                            <option>Fixed Account</option>
+                                            <option>current Account</option>
+                                            <option>Business Account</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label>Account Currency</label>
+                                        <select class="form-control selectric">
+                                            <option>American (United States) Dollars - USD </option>
+                                            <option>Australia Dollars</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-6">
+                                        <label for="Username" class="d-block">Username</label>
+                                        <input id="Username" type="text" class="form-control pwstrength" data-indicator="pwindicator" name="Username">
+                                        <div id="pwindicator" class="pwindicator">
+                                            <div class="bar"></div>
+                                            <div class="label"></div>
+                                        </div>
+                                    </div>
+    
+    
+                                    <div class="form-group col-6">
+                                        <label for="access" class="d-block">Access Code</label>
+                                        <input id="access" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="access">
+                                        <div id="pwindicator" class="pwindicator">
+                                            <div class="bar"></div>
+                                            <div class="label"></div>
+                                        </div>
+                                    </div>
                                     <div class="form-group col-6">
                                         <label for="password" class="d-block">Password</label>
                                         <input id="password" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="password">
@@ -68,28 +168,13 @@
                                         <label for="password2" class="d-block">Password Confirmation</label>
                                         <input id="password2" type="password" class="form-control" name="password-confirm">
                                     </div>
+    
                                 </div>
-                                <div class="form-divider">Your Home</div>
-                                <div class="row">
-                                    <div class="form-group col-6">
-                                        <label>Country</label>
-                                        <select class="form-control selectric">
-                                            <option>USA</option>
-                                            <option>Palestine</option>
-                                            <option>Syria</option>
-                                            <option>Malaysia</option>
-                                            <option>Thailand</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label>Province</label>
-                                        <select class="form-control selectric">
-                                            <option>West Java</option>
-                                            <option>East Java</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
+
+                               
+
+
+                                {% comment %} <div class="row">
                                     <div class="form-group col-6">
                                         <label>City</label>
                                         <input type="text" class="form-control">
@@ -98,7 +183,7 @@
                                         <label>Postal Code</label>
                                         <input type="text" class="form-control">
                                     </div>
-                                </div>
+                                </div> {% endcomment %}
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" name="agree" class="custom-control-input" id="agree">
@@ -106,7 +191,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
                                 </div>
                             </form>
                         </div>

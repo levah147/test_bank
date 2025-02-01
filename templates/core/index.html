@@ -163,7 +163,7 @@
           <li role="presentation"><a href="#" data-filter=".strategy">Strategy</a></li>
        </ul>
     <div class="row portfolio-items">
-      <figure class="portfolio-item col-md-4 consulting">
+      {% comment %} <figure class="portfolio-item col-md-4 consulting">
         <div class="magnific-img">
           <a class="image-popup-vertical-fit" href="img/images/gallery1.jpg">
               <img src="{% static 'img/images/gallery1.jpg' %}" alt="" />
@@ -176,31 +176,31 @@
               <img src="{% static 'img/images/gallery2.jpg' %}" alt="" />
           </a>
         </div>
-      </figure>
+      </figure> {% endcomment %}
       <figure class="portfolio-item col-md-4 finance">
         <div class="magnific-img">
-          <a class="image-popup-vertical-fit" href="img/images/gallery3.jpg">
+          <a class="image-popup-vertical-fit" href="{% static 'img/images/gallery3.jpg' %}">
               <img src="{% static 'img/images/gallery3.jpg' %}" alt="" />
           </a>
         </div>
       </figure>
       <figure class="portfolio-item col-md-4 consulting">
         <div class="magnific-img">
-          <a class="image-popup-vertical-fit" href="img/images/gallery4.jpg">
+          <a class="image-popup-vertical-fit" href="{% static 'img/images/gallery4.jpg' %}">
               <img src="{% static 'img/images/gallery4.jpg' %}" alt="" />
           </a>
         </div>
       </figure>
-      <figure class="portfolio-item col-md-4 strategy">
+      {% comment %} <figure class="portfolio-item col-md-4 strategy">
         <div class="magnific-img">
           <a class="image-popup-vertical-fit" href="img/images/gallery5.jpg">
               <img src="{% static 'img/images/gallery5.jpg' %}" alt="" />
           </a>
         </div>
-      </figure>
+      </figure> {% endcomment %}
       <figure class="portfolio-item col-md-4 design consulting">
         <div class="magnific-img">
-          <a class="image-popup-vertical-fit" href="img/images/gallery6.jpg">
+          <a class="image-popup-vertical-fit" href="{% static 'img/images/gallery6.jpg' %}">
               <img src="{% static 'img/images/gallery6.jpg' %}" alt="" />
           </a>
         </div>
